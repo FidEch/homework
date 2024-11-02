@@ -6,9 +6,9 @@ numbers.remove(1)
 for i in numbers:
   k = 0
   for j in range(2, i // 2+1):
-    if (i % j == 0):
+    if i % j == 0:
         k = k+1
-  if (k <= 0):
+  if k <= 0:
     is_prime = True
     prime.append(i)
   else:
