@@ -7,6 +7,7 @@ while x < len(my_list):
     if my_list [x] < 0:
         break
     if my_list[x] == 0:
+        x += 1
         continue
 
 
