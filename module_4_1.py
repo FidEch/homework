@@ -1,5 +1,7 @@
-import true_math as t_m
-import fake_math as f_m
+from true_math import divide_true as t_m
+from fake_math import divide_fake as f_m
 
-print(t_m.divide_true(37,0))
-print(f_m.divide_fake(15,0))
+print(t_m(37,4))
+print(f_m(15,5))
+print(t_m(37,0))
+print(f_m(15,0))
