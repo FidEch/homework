@@ -1,21 +1,19 @@
 calls = 0
-def count_calls ():
+def count_calls():
     global calls
     calls += 1
-def string_info():
-    string = input(" Enter string_1: ")
-    print(len(string), string.lower(), string.upper())
+def string_info(string):
     count_calls()
-def is_contains():
-    string = ["one", "two", "three"]
-    n = input(" Enter one or two or three: ")
-    for n in string:
-        if n == "one" or "two" or "three":
-            list_to_search = True
-        else:
-            list_to_search = False
-    print(list_to_search)
+    return len(string), string.lower(), string.upper()
+def is_contains(string, list_to_search):
     count_calls()
-string_info()
-is_contains()
+    list_to_search = ' '.join(list_to_search)
+    if string.lower() not in list_to_search.lower():
+        return False
+    else:
+        return True
+print(string_info('Capybara'))
+print(string_info('Armageddon'))
+print(is_contains('Urban', ['ban', 'BaNaN', 'urBAN']))
+print(is_contains('cycle', ['Recycling', 'cyclic']))
 print(calls)
