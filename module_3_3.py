@@ -2,6 +2,8 @@ def print_params(a = 1, b = 'строка', c = True):
     print(a, b, c)
 print_params(b = 25)
 print_params(c = [1,2,3])
+print_params(10000,{1:33,2:21},False)
+print_params()
 values_list = [7, False, 'dog']
 values_dict = {'a': 9, 'b': True, 'c': 'cat'}
 print_params(*values_list)
