@@ -8,5 +8,5 @@ def the_gate ():
                     password.append({i,j})
                 if j < i:
                     continue
-    print(password)
+    print(*list(password))
 the_gate()
