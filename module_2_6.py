@@ -5,8 +5,9 @@ def the_gate ():
         for j in range(n):
             if i+j == n:
                 if j > i:
-                    password.append({i,j})
+                    password.append([i,j])
                 if j < i:
                     continue
-    print(*list(password))
+    result = sum(password, [])
+    print(*result)
 the_gate()
